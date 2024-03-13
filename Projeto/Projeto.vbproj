@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B2803C38-D2C3-4ACF-836D-FA57F442FE4A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Projeto.My.MyApplication</StartupObject>
+    <RootNamespace>Projeto</RootNamespace>
+    <AssemblyName>Projeto</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Projeto.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Projeto.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alterar_Entidade.Designer.vb">
+      <DependentUpon>Alterar_Entidade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alterar_Entidade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alterar_Entidades.Designer.vb">
+      <DependentUpon>Alterar_Entidades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alterar_Entidades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alterar_financiador.Designer.vb">
+      <DependentUpon>Alterar_financiador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alterar_financiador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alterar_Membro.Designer.vb">
+      <DependentUpon>Alterar_Membro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alterar_Membro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alterar_Programa.Designer.vb">
+      <DependentUpon>Alterar_Programa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alterar_Programa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alterar_projeto.Designer.vb">
+      <DependentUpon>alterar_projeto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="alterar_projeto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="criar financiador.Designer.vb">
+      <DependentUpon>criar financiador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="criar financiador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Criar_Entidade.Designer.vb">
+      <DependentUpon>Criar_Entidade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Criar_Entidade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Criar_Entidades.Designer.vb">
+      <DependentUpon>Criar_Entidades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Criar_Entidades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Criar_Membro.Designer.vb">
+      <DependentUpon>Criar_Membro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Criar_Membro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Criar_Programa.Designer.vb">
+      <DependentUpon>Criar_Programa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Criar_Programa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Criar_Projeto.Designer.vb">
+      <DependentUpon>Criar_Projeto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Criar_Projeto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar_Entidade.Designer.vb">
+      <DependentUpon>Eliminar_Entidade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar_Entidade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar_Entidades.Designer.vb">
+      <DependentUpon>Eliminar_Entidades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar_Entidades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar_financiador.Designer.vb">
+      <DependentUpon>Eliminar_financiador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar_financiador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar_Membro.Designer.vb">
+      <DependentUpon>Eliminar_Membro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar_Membro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar_Programa.Designer.vb">
+      <DependentUpon>Eliminar_Programa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar_Programa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar_projeto.Designer.vb">
+      <DependentUpon>Eliminar_projeto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar_projeto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entidades.Designer.vb">
+      <DependentUpon>Entidades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista_Entidade.Designer.vb">
+      <DependentUpon>Lista_Entidade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lista_Entidade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lista_Programas.Designer.vb">
+      <DependentUpon>lista_Programas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lista_Programas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Membros.Designer.vb">
+      <DependentUpon>Membros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Membros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projetos.Designer.vb">
+      <DependentUpon>Projetos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Projetos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SQLControl.vb" />
+    <Compile Include="Ver_lista_financiadores.Designer.vb">
+      <DependentUpon>Ver_lista_financiadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ver_lista_financiadores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Alterar_Entidade.resx">
+      <DependentUpon>Alterar_Entidade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alterar_Entidades.resx">
+      <DependentUpon>Alterar_Entidades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alterar_financiador.resx">
+      <DependentUpon>Alterar_financiador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alterar_Membro.resx">
+      <DependentUpon>Alterar_Membro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alterar_Programa.resx">
+      <DependentUpon>Alterar_Programa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alterar_projeto.resx">
+      <DependentUpon>alterar_projeto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="criar financiador.resx">
+      <DependentUpon>criar financiador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Criar_Entidade.resx">
+      <DependentUpon>Criar_Entidade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Criar_Entidades.resx">
+      <DependentUpon>Criar_Entidades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Criar_Membro.resx">
+      <DependentUpon>Criar_Membro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Criar_Programa.resx">
+      <DependentUpon>Criar_Programa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Criar_Projeto.resx">
+      <DependentUpon>Criar_Projeto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar_Entidade.resx">
+      <DependentUpon>Eliminar_Entidade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar_Entidades.resx">
+      <DependentUpon>Eliminar_Entidades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar_financiador.resx">
+      <DependentUpon>Eliminar_financiador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar_Membro.resx">
+      <DependentUpon>Eliminar_Membro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar_Programa.resx">
+      <DependentUpon>Eliminar_Programa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar_projeto.resx">
+      <DependentUpon>Eliminar_projeto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entidades.resx">
+      <DependentUpon>Entidades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista_Entidade.resx">
+      <DependentUpon>Lista_Entidade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lista_Programas.resx">
+      <DependentUpon>lista_Programas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Membros.resx">
+      <DependentUpon>Membros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projetos.resx">
+      <DependentUpon>Projetos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ver_lista_financiadores.resx">
+      <DependentUpon>Ver_lista_financiadores.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
